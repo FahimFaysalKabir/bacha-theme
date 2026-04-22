@@ -75,4 +75,8 @@
 
   add_action('after_setup_theme','basic_function');
 
+
+  include('opt/redux-core/framework.php');
+  include('opt/sample/saiful.php');
+
 ?>
