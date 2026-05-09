@@ -1,4 +1,6 @@
+<?php global $batch52;?> 
 <!DOCTYPE html>
+
 <html <?php language_attributes();?>>
   <head>
  
@@ -32,15 +34,15 @@
 		    		<div class="row d-flex">
 			    		<div class="col-md-5 pr-4 d-flex topper align-items-center">
 			    			<div class="icon bg-fifth mr-2 d-flex justify-content-center align-items-center"><span class="icon-map"></span></div>
-						    <span class="text">198 West 21th Street, Suite 721 New York NY 10016</span>
+						    <span class="text"><?php echo $batch52['addresss'];?></span>
 					    </div>
 					    <div class="col-md pr-4 d-flex topper align-items-center">
 					    	<div class="icon bg-secondary mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-						    <span class="text">youremail@email.com</span>
+						    <span class="text"><?php echo $batch52['emaill'];?></span>
 					    </div>
 					    <div class="col-md pr-4 d-flex topper align-items-center">
 					    	<div class="icon bg-tertiary mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-						    <span class="text">+ 1235 2355 98</span>
+						    <span class="text"><?php echo $batch52['phoneee'];?></span>
 					    </div>
 				    </div>
 			    </div>

@@ -14,7 +14,7 @@ if ( ! class_exists( 'Redux' ) ) {
 }
 
 // This is your option name where all the Redux data is stored.
-$opt_name = 'redux_demo';  // YOU MUST CHANGE THIS.  DO NOT USE 'redux_demo' IN YOUR PROJECT!!!
+$opt_name = 'batch52';  // YOU MUST CHANGE THIS.  DO NOT USE 'redux_demo' IN YOUR PROJECT!!!
 
 // Uncomment to disable demo mode.
 /* Redux::disable_demo(); */  // phpcs:ignore Squiz.PHP.CommentedOutCode
@@ -242,23 +242,116 @@ Redux::setSection($opt_name,array(
 Redux::setSection($opt_name,array(
 
 'title' => 'logo Setting',
-'subsection' => true
+'subsection' => true,
+'fields' =>array(
+
+        array(
+
+             'title' => 'logo upload',
+             'id'    => 'loo',
+             'type'  => 'media' 
+ 
+
+        ),
+         array(
+
+             'title' => 'logo width',
+             'id'    => 'loowww',
+             'type'  => 'text' 
+ 
+
+        ),
+
+        array(
+
+             'title' => 'logo height',
+             'id'    => 'loohhhh',
+             'type'  => 'text' 
+ 
+
+        ), 
+
+
+)
 ));
 Redux::setSection($opt_name,array(
 
 'title' => 'Contact Info',
-'subsection' => true
+'subsection' => true,
+'fields' =>array(
+
+        array(
+
+             'title' => 'phone',
+             'id'    => 'phoneee',
+             'type'  => 'text' 
+ 
+
+        ),
+
+        array(
+             
+             'title' => 'email',
+             'id'    => 'emaill',
+             'type'  => 'text'
+        ),
+
+         array(
+             
+             'title' => 'address',
+             'id'    => 'addresss',
+             'type'  => 'text'
+        )
+
+)
+
 ));
 
 Redux::setSection($opt_name,array(
 
 'title' => 'Social Icons',
-'subsection' => true
+'subsection' => true,
+'fields' =>array(
+
+        array(
+
+             'title' => 'facebook',
+             'id'    => 'fb',
+             'type'  => 'text' 
+ 
+
+        ),
+
+        array(
+             
+             'title' => 'linkedin',
+             'id'    => 'liii',
+             'type'  => 'text'
+        ),
+         array(
+             
+             'title' => 'twitter',
+             'id'    => 'twtr',
+             'type'  => 'text'
+        ),
+)
 ));
 
 Redux::setSection($opt_name,array(
 
-'title' => 'Footer Settings'
+'title' => 'Footer Settings',
+'fields' =>array(
+
+        array(
+
+             'title' => 'copy right text',
+             'id'    => 'crtt',
+             'type'  => 'text',
+             'default' => 'ami nai re..' 
+ 
+
+        )
+)
 ));
 /*
  * ---> END ARGUMENTS
