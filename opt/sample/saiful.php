@@ -237,7 +237,44 @@ Redux::setSection($opt_name,array(
 
 'title' => 'General Option'
 ));
+Redux::setSection($opt_name,array(
 
+'title' => 'Layout',
+'subsection' => true,
+'fields' =>array(
+
+        array(
+
+             'title' => 'responsive mode',
+             'id'    => 'resss',
+             'type'  => 'button_set',
+             'options'=>array(
+                  'on'  => 'On',
+                  'off' => 'off'
+
+             ),
+             'default' => 'on'
+ 
+
+        ),
+
+        array(
+
+              'title' => 'layout',
+              'id'    => 'layy',
+              'type'  => 'radio',
+              'options'=>array(
+                  'on'  => 'full width',
+                  'off' => 'boxed'
+
+             ),
+              'default' => 'on'
+        )
+        
+
+
+)
+));
 
 Redux::setSection($opt_name,array(
 
